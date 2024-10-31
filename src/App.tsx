@@ -28,45 +28,6 @@ function App() {
   const [userNotFound, setUserNotFound]= useState(true);
   const [userId, setUserID]= useState("")
   const [input, setInput] = useState(true)
-  /* const currentPage= window.location.pathname.split("/");
-  if(currentPage.length>4){
-    return(
-      <Notfound/>
-    )
-  }
-  else if(currentPage.length==3|| currentPage.length==3){
-  const val1addrs=currentPage[currentPage.length-2];
-  const val1addrsId=currentPage[currentPage.length-1];
-  const checkId = async()=>{
-    try {
-      await contract.methods.userPageReturn(val1addrs, val1addrsId).call().then((res) =>{
-          //console.log(res)
-          const viewpage= res.map(
-            (data)=>(
-              <div className='sub-list-each'>
-                <div className='Topic-sub'>{data.topic}</div>
-                <div className='Link-sub'><a href={data.link} target='_blank'>{data.link}</a></div>
-              </div>
-            )
-          )
-          setElem(viewpage);
-          setTr(true)
-        }
-      )
-    }
-    catch(err){
-      console.log(err)
-    }
-  }
-  checkId();
-}
-  if(tr){
-    return(
-      <div>
-        <div>{elem}</div>
-      </div>
-    )
-  } */
  useEffect(
     ()=>{
       if(status=='connected'){

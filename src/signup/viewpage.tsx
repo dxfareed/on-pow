@@ -20,8 +20,8 @@ export default function SharedViewPage({setUserName}) {
             //@ts-ignore
             (data)=>(
               <li className='sub-list-each'>
-                <div className='Topic-sub'>{data.topic}</div>
-                <div className='Link-sub'><a href={data.link} target='_blank'>{data.link}</a></div>
+                <div className='Topic-sub'><a href={data.link} target='_blank'>{data.topic}</a>
+                </div>
               </li>
             )
           )}
